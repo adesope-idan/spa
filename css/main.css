@@ -54,16 +54,16 @@
 }
 
 @keyframes move {
-    from {
-        transform: translateX(0);
+    from{
+         transform: translateX(10%);
     }
 
     to {
-        transform: translateX(calc(-50% - 10px));
+        transform: translateX(-30%);
     }
 }
 
 .animate-move {
-    animation: move 20s linear infinite;
+    animation: move 14s linear infinite;
 }
 
