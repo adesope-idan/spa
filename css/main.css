@@ -53,3 +53,17 @@
     }
 }
 
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50% - 10px));
+    }
+}
+
+.animate-move {
+    animation: move 20s linear infinite;
+}
+
