@@ -17,42 +17,6 @@
     }
 }
 
-
-.faq h6,
-.ratings h5 {
-   font-family: "Almarai", serif;
-}
-
-@media (min-width:500px) and (max-width:563px) {
-
-    .hero h1 {
-        font-size: 3rem;
-        line-height: 2.75rem;
-    }
-}
-
-@media (min-width:425px) and (max-width:499px) {
-    .hero h1 {
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-    }
-    
-    .hero h3 {
-        width: 90%;
-    }
-}
-
-@media (min-width:564px) and (max-width:639px) {
-    .hero h1 {
-        font-size: 3.5rem;
-        line-height: 3.5rem;
-    }
-
-    .hero h3 {
-        width: 90%;
-    }
-}
-
 @keyframes move {
     from{
          transform: translateX(10%);
@@ -66,4 +30,49 @@
 .animate-move {
     animation: move 14s linear infinite;
 }
+
+
+.faq h6,
+.ratings h5 {
+   font-family: "Almarai", serif;
+}
+
+@media (min-width:425px) and (max-width:499px) {
+    .hero h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    
+    .hero h3 {
+        width: 90%;
+    }
+}
+
+@media (min-width:500px) and (max-width:563px) {
+
+    .hero h1 {
+        font-size: 3rem;
+        line-height: 2.75rem;
+    }
+}
+
+
+
+@media (min-width:564px) and (max-width:639px) {
+    .hero h1 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .hero h3 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 640px) {
+    .animate-move {
+        animation: none;
+    }
+}
+
 

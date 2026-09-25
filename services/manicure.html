@@ -14,68 +14,91 @@
 <body>
     
     <nav class="flex items-center gap-9 py-7 px-10 text-lg uppercase font-semibold fixed">
-        <a href="#"><img src="/images/logo-4.png" alt=""></a>
+        <a class="py-5" href="/index.html"><img src="/images/logo-4.png" alt=""></a>
 
-        <li class="hidden sm:flex gap-5">
-           <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Products</a>
-            <a href="#">Contact</a>
-            <a href="#">About</a> 
-        </li>
-            
+        <ul class="hidden sm:flex gap-5">
+            <li class="py-5"><a href="/">Home</a></li>
+            <li class="relative group py-5">
+                <a href="/#services">Services</a>
+                <ul class="bg-white absolute left-0 top-full w-50 capitalize hidden group-hover:block">
+                    <li class="py-2 w-full border-b-[#ebf1f5] border-b font-normal hover:font-semibold">
+                        <a class="px-5 text-neutral-900" href="/services/">Spa & Massage</a>
+                    </li>
+                    <li class="py-2 w-full border-b-[#ebf1f5] border-b font-normal hover:font-semibold">
+                        <a class="px-5 text-neutral-900" href="/services/manicure.html">Manicure</a>
+                    </li>
+                    <li class="py-2 w-full border-b-[#ebf1f5] border-b font-normal hover:font-semibold">
+                        <a class="px-5 text-neutral-900" href="/services/pedicure.html">Pedicure</a>
+                    </li>
+                    <li class="py-2 w-full border-b-[#ebf1f5] border-b font-normal hover:font-semibold">
+                        <a class="px-5 text-neutral-900" href="/services/makeup.html">Makeup</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="py-5"><a href="/#why-us">Why Choose Us</a></li>
+            <li class="py-5"><a href="/#gallery">Gallery</a></li>
+            <li class="py-5"><a href="/#contact">Contact</a></li>
+            <li class="py-5"><a href="#">About</a> </li>
+        </ul>
+        
     </nav>
 
 
     <main>
        
         <section class="pt-30">
-            <div class="pl-20 pb-20">
-                <h1 class="flex flex-col text-7xl font-semibold py-10">Manicure</h1>
-                <p class="text-xl font-semibold">Polished Hands, Beautifully Finished</p>
+            <div class="md:px-20 sm:px-10 px-5 flex flex-col pb-20">
+                <h1 class="sm:text-7xl text-5xl font-semibold py-8">Manicure</h1>
+                <p class="sm:text-xl text-lg font-semibold pb-8">Polished Hands, Beautifully Finished</p>
+
+                <a class="bg-neutral-900 text-neutral-50 text-xl font-semibold px-5 py-1 inline-block rounded-full self-end" href="#">
+                    <span>Book now </span>
+                    <i class="text-sm fa-solid fa-arrow-right-long"></i>
+                </a>
             </div>    
             <img class="h-dvh w-dvw object-cover" src="/images/banner5-bg1.jpg" alt="">
         </section>
 
-        <section class="flex flex-col py-25 px-20">
-            <h2 class="self-end text-xl w-3/5 pr-20">
+        <section class="xl:px-20 lg:px-15 sm:px-10 px-5 flex flex-col py-25">
+            <h2 class="xl:pr-20 xl:w-3/5 lg:w-[70%] self-end max-md:text-lg text-xl max-sm:text-base">
                 Your hands deserve just as much care as the rest of you. Our manicure services combine professional nail care with beautiful finishing touches, giving you neat, polished nails that complement your personal style.
             </h2>
 
             <h3 class="text-3xl font-semibold py-10">Our Manicure Treatments</h3>
 
-            <div class="grid grid-cols-6 gap-6 gap-y-15">
-                
-                <div class="col-span-6 flex gaps-10 bg-neutral-100">
-                    <div class="h-85 w-2/5 bg-neutral-600 rounded-2xl"></div>
-                    <div class="flex flex-col justify-center pl-10 pr-15 w-3/5">
-                        <h4 class="text-2xl pb-5">Clasic / Regular Manicure</h4>
-                        <p>
+            <div class="grid grid-cols-6 gap-y-15 gap-6">
+
+                <div class="max-md:flex-col md:gap-10 gap-5 col-span-6 flex bg-neutral-100">
+                    <div class="lg:w-2/5 md:w-[45%] w-full h-85 bg-neutral-600 rounded-2xl"></div>
+                    <div class="lg:w-3/5 md:w-[65%] md:pl-10 md:pr-15 flex flex-col justify-center ">
+                        <h4 class="lg:text-3xl md:text-xl text-2xl md:pb-5 pb-3">Clasic / Regular Manicure</h4>
+                        <p class="max-md:text-sm"></p>
                             A timeless manicure focused on essential nail care, shaping, cuticle care, and a clean, polished finish.
                         </p>
                     </div>      
                 </div>
             
-                <div class="col-span-2">
+                <div class="xl:col-span-2 md:col-span-3 col-span-6">
                     <div class="bg-neutral-300 h-90 rounded-2xl"></div>
-                    <h4 class="text-2xl py-5">Gel Manicure</h4>
-                    <p>
+                    <h4 class="lg:text-3xl md:text-xl text-2xl md:py-5 py-3">Gel Manicure</h4>
+                    <p class="max-md:text-sm">
                         A manicure finished with gel polish for a smooth, glossy look and a durable finish that's perfect for everyday wear or special occasions.
                     </p>
                 </div>
-                <div class="col-span-2">
+                <div class="xl:col-span-2 md:col-span-3 col-span-6">
                     <div class="bg-neutral-300 h-90 rounded-2xl"></div>
-                    <h4 class="text-2xl py-5">French Manicure</h4>
-                    <p>
+                    <h4 class="lg:text-3xl md:text-xl text-2xl md:py-5 py-3">French Manicure</h4>
+                    <p class="max-md:text-sm">
                         A classic and elegant nail style featuring a clean, sophisticated finish that works beautifully for both everyday looks and special occasions.
                     </p>
                 </div>
-                <div class="col-span-2">
+                <div class="xl:col-span-2 md:col-span-3 col-span-6">
                     <div class="bg-neutral-300 h-90 rounded-2xl"></div>
-                    <h4 class="text-2xl py-5">Russian Manicure</h4>
-                    <p>
+                    <h4 class="lg:text-3xl md:text-xl text-2xl md:py-5 py-3">Russian Manicure</h4>
+                    <p class="max-md:text-sm">
                         A detailed manicure technique focused on precise cuticle care and a clean, refined nail finish for a polished appearance.
                     </p>
+        
                 </div>
             
                 
@@ -83,11 +106,11 @@
         </section>
 
         
-        <section class="flex flex-col pr-25">
+        <section class="max-sm:px-5 lg:pr-25 flex flex-col">
             <div class="self-end">
                 <h3 class="text-3xl font-semibold pb-5">Why Choose Our Manicure Service?</h3>
 
-                <ul class="flex flex-col gap-2 text-xl pr-20 font-medium">
+                <ul class="sm:text-xl sm:pr-20 flex flex-col gap-2 font-medium">
                     <li>Neat and detailed nail care</li>
                     <li>Multiple styles to suit your preference</li>
                     <li>Professional finishing</li>
@@ -100,13 +123,13 @@
     </main>
 
 
-    <!----------------- CTA SECTION ------------------->
+     <!----------------- CTA SECTION ------------------->
     <section class="bg-[url(/images/banner5-bg1.jpg)] bg-cover relative my-35 py-25 flex items-center">
 
 
-        <div class="lg:w-1/2 space-y-3 sm:pl-15 sm:px-8 px-5 py-20 w-full text-neutral-50">
+        <div class="xl:w-1/2 lg:w-2/3 space-y-3 sm:pl-15 sm:px-8 px-5 py-20 w-full text-neutral-50">
             <h3 class="sm:text-[50px] text-4xl font-medium">Ready to Feel Refreshed?</h3>
-            <p class="sm:text-base text-sm pb-7 sm:w-3/4">
+            <p class="lg:w-3/4 sm:text-base text-sm pb-7">
                 Pause. Relax. Indulge. Book your preffered treatment, and experience beauty and wellness designed around you at your home or at our ikeja studio.
             </p>
             <a class="sm:text-lg sm:py-4 sm:px-7 py-2 px-5 bg-neutral-100 text-neutral-800 font-bold rounded-full" href="#">
@@ -122,7 +145,7 @@
         <img class="size-7 absolute right-0 bottom-11.75 z-10 rotate-180" src="/images/curve.svg" alt="">
     </section>
 
-    <footer class=" bg-neutral-900">
+    <footer id="contact" class="bg-neutral-900">
 
         <div class="grid sm:grid-cols-6 grid-cols-3 pb-10">
             <img src="/images/instagram2-1.jpg" alt="">
@@ -136,23 +159,39 @@
         <div class="grid md:grid-cols-[250px_150px_200px] sm:grid-cols-[220px_110px_170px] lg:px-20 md:px-15  justify-between sm:px-10 border-b border-neutral-500 py-15 text-neutral-300 px-5 gap-10">
             <div class="flex flex-col gap-1 md:text-lg">
                 <h6 class="md:text-3xl text-2xl pb-3">Contact Us</h6>
-                <a class="flex gap-2 items-baseline" href="#"><i class="fa-solid fa-location-dot"></i>55 Main Street, 2nd-block Melbourne, Australia</a>
-                <a class="flex gap-2 items-baseline" href="#"><i class="icon fa-solid fa-envelope"></i>infobeauta@gmail.com</a>
-                <a class="flex gap-2 items-baseline" href="#"><i class="fa-duotone fa-solid fa-phone-flip"></i>+(234) 345 765 6543</a>
+                <a class="flex gap-2 items-baseline" href="#">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>55 Main Street, 2nd-block Melbourne, Australia</span>
+                </a>
+                <a class="flex gap-2 items-baseline" href="#">
+                    <i class="icon fa-solid fa-envelope"></i>
+                    <span>infobeauta@gmail.com</span>
+                </a>
+                <a class="flex gap-2 items-baseline" href="#">
+                    <i class="fa-duotone fa-solid fa-phone-flip"></i>
+                    <span>+(234) 345 765 6543</span>
+                </a>
 
                 <div class="flex gap-3 text-white py-5">
-                    <a class="w-8 h-8 rounded-[50%] inline-flex items-center justify-center bg-neutral-500" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a class="w-8 h-8 rounded-[50%] inline-flex items-center justify-center bg-neutral-500" href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a class="w-8 h-8 rounded-[50%] inline-flex items-center justify-center bg-neutral-500" href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a class="w-8 h-8 rounded-[50%] inline-flex items-center justify-center bg-neutral-500" href="#"><i class="fa-solid fa-x"></i></a>
+                    <a class="w-8 h-8 rounded-[50%] inline-flex items-center justify-center bg-neutral-500" href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a class="w-8 h-8 rounded-[50%] inline-flex items-center justify-center bg-neutral-500" href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a class="w-8 h-8 rounded-[50%] inline-flex items-center justify-center bg-neutral-500" href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="w-8 h-8 rounded-[50%] inline-flex items-center justify-center bg-neutral-500" href="#">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
                 </div>
             </div>
 
             <div class="flex flex-col gap-1 md:text-lg">
                 <h6 class="md:text-3xl text-2xl pb-3">Menu</h6>
-                <a href="#">Our services</a>
-                <a href="#">Team member</a>
-                <a href="#">Testimonials</a>
+                <a href="/#services">Our services</a>
+                <a href="/#testimonials">Testimonials</a>
                 <a href="#">About us</a>
             </div>
 
@@ -164,12 +203,12 @@
             </div>
         </div> 
         
-        <div class="flex sm:flex-row flex-col-reverse justify-between md:px-20 sm:px-10 sm:py-8 sm:text-xl text-sm px-5 py-4">
-            &copy; 2025 Beauta. All Rights Reserved.
+        <div class="flex sm:flex-row flex-col-reverse justify-between md:px-20 sm:px-10 sm:py-8 sm:text-xl text-sm px-5 py-4 text-neutral-50">
+            <span>&copy; 2026 Idees. S. All Rights Reserved.</span>
 
             <div class="flex sm:gap-4 sm:justify-normal justify-between">
                 <a href="#">Privacy Policy</a>
-                <a href="#">FAQs</a>
+                <a href="/#faq">FAQs</a>
             </div>
         </div>
     </footer>
