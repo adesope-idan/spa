@@ -1,117 +1,114 @@
-@import "tailwindcss" ;
-
+@import "tailwindcss";
 
 html {
- scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 .services,
 .why-us,
 .how-it-works {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-
 
 .services::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 .why-us::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 .how-it-works::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .book-now {
-    background-color: transparent;
-    transition: all 0.3s ease;
+  background-color: transparent;
+  transition: all 0.3s ease;
 }
 
 .book-now:hover {
-    background: black;
-    color: white;
-    transform: translateY(-3px);
+  background: black;
+  color: white;
+  transform: translateY(-3px);
 }
 
 .faq h6,
 .ratings h5 {
-   font-family: "Almarai", serif;
+  font-family: "Almarai", serif;
 }
 
 @layer base {
-   
-    p {
-        font-family: "Plus Jakarta Sans", sans-serif;
-    }
+  p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
 }
 
 @keyframes move {
-    from{
-         transform: translateX(10%);
-    }
+  from {
+    transform: translateX(10%);
+  }
 
-    to {
-        transform: translateX(-30%);
-    }
+  to {
+    transform: translateX(-30%);
+  }
 }
 
 img {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .animate-move {
-    animation: move 14s linear infinite;
+  animation: move 14s linear infinite;
 }
 
+@media (min-width: 425px) and (max-width: 499px) {
+  .hero h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
 
-@media (min-width:425px) and (max-width:499px) {
-    .hero h1 {
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-    }
-    
-    .hero h3 {
-        width: 90%;
-    }
+  .hero h3 {
+    width: 90%;
+  }
 }
 
-@media (min-width:500px) and (max-width:563px) {
-
-    .hero h1 {
-        font-size: 3rem;
-        line-height: 2.75rem;
-    }
+@media (min-width: 500px) and (max-width: 563px) {
+  .hero h1 {
+    font-size: 3rem;
+    line-height: 2.75rem;
+  }
 }
 
+@media (min-width: 564px) and (max-width: 639px) {
+  .hero h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
 
-
-@media (min-width:564px) and (max-width:639px) {
-    .hero h1 {
-        font-size: 3.5rem;
-        line-height: 3.5rem;
-    }
-
-    .hero h3 {
-        width: 90%;
-    }
+  .hero h3 {
+    width: 90%;
+  }
 }
 
 @media (max-width: 640px) {
-    .animate-move {
-        animation: none;
-    }
+  .animate-move {
+    animation: none;
+  }
 }
 
 @media (max-width: 869px) {
-    nav ul {
-        display: none;
-    }
+  nav ul {
+    display: none;
+  }
 }
 
 @media (min-width: 870px) {
-    nav ul:first-child {
-        display: flex;
-    }
+  nav ul:first-child {
+    display: flex;
+  }
 }
-
+@media (max-width: 640px) {
+   .book-now {
+    align-self: self-start;
+   } 
+}
